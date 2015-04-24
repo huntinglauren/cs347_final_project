@@ -6,7 +6,7 @@ Tucker Long: tl7877
 
 Memo Terrazas: gat489
 
-URL: tbd
+URL: https://apex.oracle.com/pls/apex/f?p=53704:1:110597905120526::NO:::
 
 
 APEX LOGIN:
