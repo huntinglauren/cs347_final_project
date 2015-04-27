@@ -1,3 +1,4 @@
+-- report for employees on a list
 SELECT List_Name, Employee_Name, Status,  Lab_Div
 FROM (
     SELECT LIST_NAME List_Name, EMPLOYEE_NAME Employee_Name, EMPLOYEE_STATUS Status, EMPLOYEE_LAB||'/'||EMPLOYEE_DIVISION Lab_Div
@@ -18,3 +19,10 @@ FROM (
         JOIN NL_MEMBER_LIST ON (NL_NOTE_LIST_LIST_SEQ_ID = LIST_SEQ_ID)) 
     JOIN NL_EMP ON(NL_EMP_EMPLOYEE_ID = EMPLOYEE_ID)
 )
+
+
+-- login item query
+select LIST_NAME as display_value, LIST_SEQ_ID as return_value 
+  from NL_NOTE_LIST
+WHERE :LOGIN = OWNERSHIP_DIV_CODE and LIST_STATUS = 'A'
+ order by 1

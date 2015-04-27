@@ -1,0 +1,1 @@
+Inactive list displays inactive lists for that users division. We created a report on the NL_NOTICE_LIST table. 
