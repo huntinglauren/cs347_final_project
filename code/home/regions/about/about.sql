@@ -1,0 +1,1 @@
+select null link, LIST_NAME label, COUNT(NL_EMP_EMPLOYEE_ID) value1 from "CS347_DB"."NL_MEMBER_LIST" ml JOIN "CS347_DB"."NL_NOTE_LIST" nl ON(ml.NL_NOTE_LIST_LIST_SEQ_ID = nl.LIST_SEQ_ID) group by LIS
