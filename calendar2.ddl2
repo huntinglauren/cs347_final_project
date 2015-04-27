@@ -1,0 +1,17 @@
+DROP SEQUENCE todo_seq ; 
+create sequence todo_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER todo_PK_trig 
+; 
+
+create or replace trigger todo_PK_trig 
+before insert on todo
+for each row 
+begin 
+select todo_seq.nextval into :new.id from dual; 
+end; 
+/
+

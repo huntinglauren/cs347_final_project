@@ -1,0 +1,40 @@
+DROP SEQUENCE todo_seq ; 
+create sequence todo_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger todo_PK_trig 
+before insert on todo
+for each row 
+begin 
+select todo_seq.nextval into :new.id from dual; 
+end; 
+/
+alter table todo add created date ; 
+alter table todo add created_by VARCHAR2 (255) ; 
+alter table todo add row_version_number integer ; 
+alter table todo add updated date ; 
+alter table todo add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger todo_AUD_trig 
+before insert or update on todo 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
