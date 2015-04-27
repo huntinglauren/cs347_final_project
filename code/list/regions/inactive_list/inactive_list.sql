@@ -1,0 +1,2 @@
+-- sql for report on inactive lists
+SELECT * FROM NL_NOTE_LIST WHERE :LOGIN = OWNERSHIP_DIV_CODE AND LIST_STATUS = 'I'

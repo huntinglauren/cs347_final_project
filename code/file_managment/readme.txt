@@ -1,1 +1,3 @@
-This page is for creating and downloading files. It is a report and form as you can create files that load into our NL_DOCUMENT table as well as download files directly. 
+This page is for creating and downloading files. It is a report and form as you can create files that load into our NL_DOCUMENT table as well as download files directly. To upload a file, select the create feature in the file management tab. This will prompt you to enter some metadata about the file, and have a button which will give you the ability to select the file you wish to upload from your computer. 
+
+To download the file, select the edit button next to any uploaded file, within here you will be able to edit the file’s metadata as well as select a download link that will download the file to your machine. 
