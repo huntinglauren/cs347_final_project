@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4A65EB1E-8559-34F9-C278-8E8B65DC061F" name="NL_User_List">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-13 22:21:32 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="list_seq_id" id="9014B9F3-FB71-01D9-6812-1A9CF1586FB8">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-13 22:21:47 UTC</createdTime>
+<generatorID>2E19009D-0777-D2FE-8B1B-70AFD6EC9C91</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<referedAttribute>A8DCC74A-6FDF-2DA2-83E2-87895DD69764</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="user_id" id="49ED5853-54D2-A571-323F-B3EBF06AA388">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-13 22:21:52 UTC</createdTime>
+<generatorID>3C246146-45C3-EBFC-72EF-88FA28EC02BD</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<referedAttribute>DF1FB066-7992-2806-35D9-3AB323D4E20A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+</Entity>

@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3819F1C0-ED47-1FAE-80E9-39E5B573535B" name="NL_todo">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-27 15:07:26 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="72A618EB-0F19-0E7E-C710-A38B3FD3CA03">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-27 15:07:38 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="name" id="35EE9851-C27B-E95A-BA61-D9ED4F3FE774">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-27 15:07:45 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="description" id="F7F7AB75-52C2-0AAB-9107-1CE1B11ACFAA">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-27 15:07:55 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2500</dataTypeSize>
+</Attribute>
+<Attribute name="date" id="4E977001-CFAB-E12F-3ABF-597031FF3DBC">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-27 15:08:06 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+</attributes>
+</Entity>

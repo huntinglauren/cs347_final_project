@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F25207EE-BEA4-A6C6-19BC-4BBBE90E3A4D" name="NL_Member_List">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-13 22:29:34 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="list_seq_id" id="40EE2B93-AC13-6B97-249F-6166238A201F">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-21 21:54:15 UTC</createdTime>
+<generatorID>A57C4D77-B803-B0A5-FDEF-B32FE251746F</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>A8DCC74A-6FDF-2DA2-83E2-87895DD69764</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="employee_id" id="2ADA72CA-69EB-B766-F2E5-17FF51180121">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-21 21:54:26 UTC</createdTime>
+<generatorID>6BAA5E33-14A2-DE68-5F5B-092822FD1728</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>88160FDC-90F1-517F-BE52-FA18BD46461B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="member_list_id" id="40959568-B6FF-D120-13F3-C4999147F30F">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-21 21:59:54 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="note_list_id" id="A5B6D421-C133-DC3A-2B78-64E7D0E3255C">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-27 15:06:52 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EF4E8B91-227C-541D-85FE-4E8CBB18B0F9" name="{entity} PK">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-13 22:31:07 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>40959568-B6FF-D120-13F3-C4999147F30F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

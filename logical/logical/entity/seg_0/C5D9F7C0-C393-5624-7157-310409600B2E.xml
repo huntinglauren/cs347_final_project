@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C5D9F7C0-C393-5624-7157-310409600B2E" name="NL_User">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-13 21:36:19 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="user_id" id="DF1FB066-7992-2806-35D9-3AB323D4E20A">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-13 21:36:25 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="type" id="90497FA9-A171-E4CE-C4F2-8BD21B7A7178">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-13 22:21:07 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="ownership_div_code" id="913600C2-0709-6F8C-EF60-3491E965E631">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-21 22:09:59 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="29DC733A-871E-FFCF-F00F-8DC2CF9E113B" name="{entity} PK">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-13 21:36:35 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DF1FB066-7992-2806-35D9-3AB323D4E20A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

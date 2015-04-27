@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="50A1B6BB-1FF2-17A1-19A4-5EC94BE6F579" name="NL_Note_list">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-13 21:36:52 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="list_seq_id" id="A8DCC74A-6FDF-2DA2-83E2-87895DD69764">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-13 21:37:03 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="list_status" id="99C51A2C-E696-D942-CB5E-E9D474DFB408">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-13 21:37:20 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="list_name" id="3067029F-036C-A495-71E7-72D4515A24D9">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-13 21:37:29 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+</Attribute>
+<Attribute name="list_description" id="DBDA88D3-EDDC-243A-9F1B-0C6B6577BF8E">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-13 21:37:43 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3500</dataTypeSize>
+</Attribute>
+<Attribute name="ownership_div_code" id="BAA2938E-7AD4-374A-C2A7-38D9662FEA37">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-13 21:37:54 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+</Attribute>
+<Attribute name="external_view_name" id="EC51A444-B72F-4859-ECB1-64423A303E1B">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-13 21:38:11 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+</Attribute>
+<Attribute name="status_eff_date" id="11A49956-0D32-5DEB-74C1-17866A0B4429">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-13 21:38:27 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="ECA418A8-137B-F331-4D45-F45B0D9017EA" name="{entity} PK">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-13 21:37:18 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<pk>true</pk>
+<newElementsIDs>A8DCC74A-6FDF-2DA2-83E2-87895DD69764</newElementsIDs>
+<usedAttributes>
+<attributeRef>A8DCC74A-6FDF-2DA2-83E2-87895DD69764</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

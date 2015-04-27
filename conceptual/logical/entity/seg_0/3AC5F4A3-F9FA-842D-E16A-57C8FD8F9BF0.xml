@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3AC5F4A3-F9FA-842D-E16A-57C8FD8F9BF0" name="NL_Employee">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-13 21:38:50 UTC</createdTime>
+<ownerDesignName>conceptual</ownerDesignName>
+<engineerTo>
+<item key="541AFCF6-FBE6-682A-6674-D588C88ADE84" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="member_id" id="B129506C-BA71-712E-6E5F-4FEB46FA1B48">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-13 21:39:01 UTC</createdTime>
+<ownerDesignName>conceptual</ownerDesignName>
+<engineerTo>
+<item key="541AFCF6-FBE6-682A-6674-D588C88ADE84" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="type" id="16ED98F5-A1B4-09F6-4463-0A1B12D63128">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-13 21:39:14 UTC</createdTime>
+<ownerDesignName>conceptual</ownerDesignName>
+<engineerTo>
+<item key="541AFCF6-FBE6-682A-6674-D588C88ADE84" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="document_id" id="936045DA-E43F-119E-0AA5-7A7FE0654E44">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-13 21:42:09 UTC</createdTime>
+<generatorID>8D4C6C9B-277C-E124-9D49-A87E5302F8BE</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<engineerTo>
+<item key="541AFCF6-FBE6-682A-6674-D588C88ADE84" value="true"/>
+</engineerTo>
+<referedAttribute>08CFE456-4503-C512-7C0E-7A32522DC269</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5C51E9C1-0414-D704-1717-E4F094FFF568" name="{entity} PK">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-13 21:39:13 UTC</createdTime>
+<ownerDesignName>conceptual</ownerDesignName>
+<engineerTo>
+<item key="541AFCF6-FBE6-682A-6674-D588C88ADE84" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B129506C-BA71-712E-6E5F-4FEB46FA1B48</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

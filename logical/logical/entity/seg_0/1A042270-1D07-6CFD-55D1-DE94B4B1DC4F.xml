@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1A042270-1D07-6CFD-55D1-DE94B4B1DC4F" name="NL_Document">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-13 21:39:27 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="document_id" id="08CFE456-4503-C512-7C0E-7A32522DC269">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-13 21:39:38 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="filename" id="FF8027F7-9DF3-E4B6-B251-61C11324AEC7">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-13 21:39:47 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3000</dataTypeSize>
+</Attribute>
+<Attribute name="file_mimetpe" id="C343A1A4-4CC0-675B-8BB2-BB876F3A0D0C">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-13 21:40:02 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+</Attribute>
+<Attribute name="file_charset" id="766DF0BA-5586-4BFE-9E54-43C8BE068E90">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-13 21:40:18 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+</Attribute>
+<Attribute name="file_data" id="CD6F5F6F-4D31-DD10-90BA-A9A6687FB917">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-13 21:40:32 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+</Attribute>
+<Attribute name="file_comments" id="F9E350B0-1EF2-5862-CF24-0F6933AF3A2A">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-13 21:40:43 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3000</dataTypeSize>
+</Attribute>
+<Attribute name="tags" id="BD3CDB5D-BBC8-D2F1-1353-BCFECA2E7C61">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-13 21:41:00 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3000</dataTypeSize>
+</Attribute>
+<Attribute name="employee_id" id="97EBF676-47B5-6E3C-A8E3-D07045659A55">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-21 21:54:37 UTC</createdTime>
+<generatorID>BA05803B-954A-D0B0-C6E7-E41C6670A753</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>88160FDC-90F1-517F-BE52-FA18BD46461B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="ECAC67BF-F483-F084-083F-698097C027BA" name="{entity} PK">
+<createdBy>laurenhunter</createdBy>
+<createdTime>2015-04-13 21:39:46 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>08CFE456-4503-C512-7C0E-7A32522DC269</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
